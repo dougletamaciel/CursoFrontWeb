@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sombras em caixas</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+        h1{
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.308);
+            /* inset significa 'dentro'... */
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.432); /* deslocamento horiontal -> deslocamento vertical -> embaçamento -> espalhamento -> cor */
+            /* de preferencia usar menos de 5 (0.500) do canal alpha,pois a sombar nao pode ser algo solido... tambem deve se manter a cor preta. */
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0;
+        }
+        footer > p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h1>noticia sobre o brasil</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque magnam incidunt harum, quas ex at est labore praesentium architecto a, eos culpa expedita suscipit ullam corrupti animi! Dolore, repellat nobis?</p>
+                <aside>
+                    <p>artigo escrito por jose da silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por dougleta gamer</p>
+    </footer>
+</body>
+</html>

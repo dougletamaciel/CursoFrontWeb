@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* 
+    em html eh 'id' , em css eh '#';
+    em html eh 'class' , em css eh '.';
+    id == identificador
+*/
+body{
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(4, 109, 0);
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(4, 109, 0);
+    color: white;
+}
+h2{
+    color: rgb(51, 77, 49);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html><!-- tipo de documento -->
+<html lang="pt-BR"><!-- documento -->
+<head><!-- cabeça -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title><!-- titulo -->
+    <style>/* estilo */
+        body{
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body><!-- corpo -->
+    <!-- antigamente era feito assim (html4)
+    <div>
+        <div id="cabecalho">
+            <h1></h1>
+            <div id="menu">
+
+            </div>
+        </div>
+        <div id="conteudo">
+
+        </div>
+        <div id="rodape">
+             
+        </div>
+    </div>  a tag 'div' nao morreu,ainda existe e funciona,soh que o html5
+    tem as novas tags semanticas... que novamente ajudam com mecanismos de buscas.-->
+    <header><!-- cabeçalho -->
+        <h1>meu site</h1><!-- titulo grau1 -->
+        <nav><!-- navegaçao -->
+            <a href="#">link</a><!-- links -->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main><!-- conteudo principal -->
+        <section id="assuntos"><!-- seçao -->
+            <p><!-- paragrafo -->Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article><!-- artigo -->
+                <h1>noticia sobre o brasil</h1><!-- titulo grau1 -->
+                <p><!-- paragrafo -->Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque magnam incidunt harum, quas ex at est labore praesentium architecto a, eos culpa expedita suscipit ullam corrupti animi! Dolore, repellat nobis?</p>
+                <aside><!-- conteudo periferico ao artigo (relativo ao artigo) -->
+                    <p><!-- paragrafo -->artigo escrito por jose da silva</p>
+                </aside>
+            </article>
+            <article><!-- artigo -->
+
+            </article>
+        </section>
+    </main>
+    <footer><!-- rodape -->
+        <p><!-- paragrafo -->desenvolvido por dougleta gamer</p>
+    </footer>
+    <!-- atualmente (html 5.1 +) eh permitido colocar qualquer grouping tag dentro de qualquer outra grouping tag... -->
+    <!-- essas tags semanticas, na verdade, tambem sao divs, elas sao 'vistas' como divs 
+    mas desta forma valoriza mais os sites para mecanismos de busca,alem de ter uma
+construçao visualmente mais organizada.-->
+</body>
+</html>

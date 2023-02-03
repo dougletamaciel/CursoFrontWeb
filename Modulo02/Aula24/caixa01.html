@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            /* display: inline; */
+            background-color: lightcoral;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* margin: auto; para centralizar caixas*/
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+
+            /* shorthands */
+            /* ----------------------------------------------------------------------------------------------
+            sintaxe == border-width -> border-style -> border-color*/
+            border: 10px solid darkslategray;
+            /* ----------------------------------------------------------------------------------------------
+            sintaxe == padding-top -> padding-right -> padding-bottom -> padding-left */
+            padding: 10px 10px 10px 10px;  /* top // right // bottom // left */
+            padding: 10px 10px 10px;  /* top // bottom // left-right (horizontal-laterals) */
+            padding: 10px 10px;  /* top-bottom (vertical-laterals) // right-left (horizontal-laterals)*/
+            padding: 10px;  /* top-right-bottom-left (all) */
+            /* ----------------------------------------------------------------------------------------------
+            sintaxe == margin-top -> margin-right -> margin-bottom -> margin-left */
+            margin: 10px 10px 10px 10px;  /* top // right // bottom // left */
+            margin: 10px 10px 10px;  /* top // left-right (horizontal-laterals) // bottom */
+            margin: 10px 10px;  /* top-bottom (vertical-laterals) // right-left (horizontal-laterals)*/
+            margin: 10px;  /* top-right-bottom-left (all) */
+            /* ----------------------------------------------------------------------------------------------
+            sintaxe == outline-width -> outline-style -> outline-color */
+            outline: 5px dashed salmon;
+        }
+        a{
+            /* display: block; */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* display: inline-block; (vai continuar sendo 'inline' mas com caracteristicas de 'bloco' como por exemplo; tamanho,altura,largura...) */
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de caixa box-level</h1>
+    <p>paragrafos tambem sao exemplos de box-level, mas os <a href="#">links sao exemplos de caixas inline-level</a> vamos ver como isto funciona.</p>
+</body>
+</html>
