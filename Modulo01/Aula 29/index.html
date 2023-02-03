@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html5</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- tem que ser acima do source anterior para alcansar este resultado. -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!-- souce acima da imagem para alcansar este resultado. sempre mantendo a ordem de baixo para cima... -->
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+</body>
+</html>
