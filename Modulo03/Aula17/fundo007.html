@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url('../Aula11/imagens-cap19/target001.png');
+            background-size: 100% 100%;
+            position: relative;/* o container deve ter posicao relativa (apesar de ser um valor padrao neste caso,vale a pena reforçar colocando-o.) */
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url('../Aula11/imagens-cap19/target001.png');
+            background-size: 100% 100%;
+            position: absolute;/* o conteudo deve ter posicao absoluta. */
+            left: 50%;/* move horizontalmente a partir da esquerda */
+            top: 50%;/* move verticalmente a partir do topo */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /* margin: auto; alinhamento horizontal [nao serve para vertical] */
+            transform: translate(-50%, -50%);/* transforma caixas, translate move-as */
+        }
+        /* as imagens ajudam na compreensao das ferramentas de centralizacao */
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
