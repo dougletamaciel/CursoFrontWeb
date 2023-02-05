@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 5px solid red;
+        }
+        tr.linha{
+            background-color: gray;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td.dado{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>minha primeira tabela</h1>
+    <!-- hierarquia de tabelas simples;
+        
+            TABLE = tabela
+                TABLE ROW = linha de tabela
+                    TABLE HEADER = cabeçalho de tabela
+                        TABLE DATA = dado de tabela
+    -->
+    <table>
+        <tr><!-- primeira linha -->
+            <td>A1</td><!-- dado/celula -->
+            <td>B1</td><!-- dado/celula -->
+            <td>C1</td><!-- dado/celula -->
+        </tr>
+        <tr class="linha"><!-- segunda linha -->
+            <td>A2</td><!-- dado/celula -->
+            <td>B2</td><!-- dado/celula -->
+            <td>C2</td><!-- dado/celula -->
+        </tr>
+        <tr><!-- terceira linha -->
+            <td>A3</td><!-- dado/celula -->
+            <td>B3</td><!-- dado/celula -->
+            <td>C3</td><!-- dado/celula -->
+        </tr>
+        <tr><!-- quarta linha -->
+            <td>A4</td><!-- dado/celula -->
+            <td class="dado">B4</td><!-- dado/celula -->
+            <td>C4</td><!-- dado/celula -->
+        </tr>
+    </table><!-- "TD's" nao sao colunas, sao celulas/dados... -->
+    <!-- a w3c diz que nao ha necessidade de fechamento das tags de tabela, e realmente nao e necessario, mas ao adotar esse tipo de construçao, eh necessario manter a atençao e nao errar as ordens, sintaxes-->
+</body>
+</html>
