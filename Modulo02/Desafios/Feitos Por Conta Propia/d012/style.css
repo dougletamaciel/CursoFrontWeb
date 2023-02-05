@@ -10,7 +10,16 @@
     padding: 0;
 }
 body{
-    height: 100%;
+    height: 100%;;
+}
+body a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 120%;
+}
+body a:hover{
+    text-decoration: underline;
 }
 header,footer{
     background-color: black;
@@ -23,34 +32,44 @@ header{
     padding-top: 60px;
 }
 header h1{
-    font-size: 3.4em;
+    font-size: 340%;
     font-family: var(--fonte01);
 }
 header p{
-    font-size: 1.2em;
-}
-main{
-    width: 100%;
-    height: 100vh;
-    background-image: url('imagens/background001.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+    font-size: 120%;
 }
 section{
-    width: 100%;
-    height: 600px;
     background-color: white;
+    padding: 100px 20px 50px;
 }
-section.destaque{
-    background-color: transparent;
-    height: 600px;
+section p{
+    font-family: var(--fonte02);
+    font-size: 160%;
+    margin-bottom: 50px;
 }
-
-
-
-
-footer{
-    font-size: 1.3em;
+section.destacado{
+    min-height: 500px;
+    position: relative;
+}
+section.destacado p{
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    color: white;
+    background-color: #0000003a;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+section#destaque01{
+    background: white url('imagens/background001.jpg') 70% center no-repeat fixed;
+    background-size: cover;
+}
+section#destaque02{
+    background: white url('imagens/background002.jpg') right center no-repeat fixed;
+    background-size: cover;
+}
+footer p{
+    font-size: 120%;
     padding: 10px;
 }
