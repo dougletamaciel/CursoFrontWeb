@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-variant: small-caps;
+            position: absolute;
+            top: 5vmin;
+            font-size: 5vmax;
+        }
+        table{
+            border-collapse: collapse;
+            width: 35vw;
+            height: 35vh;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>mesclagem de celulas</h1>
+    <!-- table>tr*3>td*3-->
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td><!-- expansao de linha -->
+            <!-- <td>C</td> -->
+        </tr>
+        <tr>
+            <td rowspan="3">D</td><!-- expansao de coluna -->
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <!-- <td>H</td> -->
+            <!-- <td>I</td> -->
+        </tr>
+        <tr>
+            <!-- <td>J</td> -->
+            <td colspan="2">K</td>
+            <!-- <td>L</td> -->
+        </tr>
+    </table>
+</body>
+</html>
