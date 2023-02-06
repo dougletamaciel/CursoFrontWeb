@@ -1,0 +1,19 @@
+legenda;  
+    * "x" == complemento de espaço
+    * "(y)" == raiz do complemento
+
+1º tabela;
+
+    1   2   3   4
+    5   6   x(3)   7
+    x(8)   8   x(8)   9
+    10  11  x(11)   12
+    x(10)   13  14  15
+
+2º
+
+    A   x(a)   x(a)   x(a)   B
+    C   D   E   F   x(b)
+    x(c)   G   H   I   x(b)
+    x(c)   J   L   M   x(b)
+    x(c)   (n)   N   x(n)   x(n)
