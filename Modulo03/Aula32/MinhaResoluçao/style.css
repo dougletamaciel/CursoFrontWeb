@@ -11,13 +11,66 @@ body{
     align-items: center;
     background-color: #383838;
 }
+h1::before{
+    content: '';
+    position: absolute;
+    left: 0;bottom: 0;
+    height: 9px;
+    width: 60vmax;
+    background-color: #505050;
+    box-shadow: 0 0 5px #ffffffb4;
+    animation: 1s linear 1s sublinhado,1s linear aparecer;
+}
 h1{
     position: absolute;
     top: 5vmin;
+    width: 61vmax;
     color: white;
     font-weight: bolder;
     font-size: 6vmax;
     font-variant: small-caps;
+    animation: 1s linear aparecer;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    width: 60vmax;
+    left: 0;
+    height: 7vmax;
+    animation: 1s linear 1s boasvindas;
+}
+@keyframes boasvindas{
+    from{
+        background-color: #383838;
+        left: 0;
+        width: 61vmax; 
+    }
+    to{
+        background-color: #383838;
+        left: 100%;  
+        width: 0;
+    }
+}
+@keyframes aparecer {
+    from{
+        color: transparent;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    to{
+        color: transparent;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+@keyframes sublinhado { 
+    from{
+        width: 0;
+    }
+    to{
+        width: 60vmax;
+    }
 }
 table{
     width: 500px;
