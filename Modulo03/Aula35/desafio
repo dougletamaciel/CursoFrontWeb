@@ -1,0 +1,25 @@
+
+    area    disciplinas    notas    media
+    x(area) x(disciplinas)  nota 1/nota 2   x(media)
+    x(exatas)   matematica  0.0/0.0    0.0
+    exatas    fisica    0.0/0.0    0.0
+    x(exatas)   quimica    0.0/0.0    0.0
+    x(exatas)   biologia    0.0/0.0    0.0
+    media de exatas    x    x/x    0.0
+    humanas    historia    0.0/0.0    0.0
+    x(humanas)    geografia    0.0/0.0    0.0
+    media de humanas    x    x/x    0.0
+
+
+
+
+    {pintado}area[th]    disciplinasa[th]    notas[th]    media[th]
+    {pintado}x(area)[th]   x(disciplinas)[th]  nota 1/nota 2[th]   x(media)[th]
+    x(exatas)[th]   matematica  0.0/0.0    0.0
+    exatas[th]    fisica    0.0/0.0    0.0
+    x(exatas)[th]    quimica    0.0/0.0    0.0
+    x(exatas)[th]    biologia    0.0/0.0    0.0
+    {pintado}media de exatas    x(media de exatas)    x/x(media de exatas)[th]     0.0
+    humanas[th]     historia    0.0/0.0    0.0
+    x(humanas)[th]     geografia    0.0/0.0    0.0
+    {pintado}media de humanas    x(media de humanas)    x/x(media de humanas)[th]     0.0
