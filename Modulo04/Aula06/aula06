@@ -1,0 +1,20 @@
+a tag 'frame' nao foi depreciada,nao ficou obsoleta, apenas o pessoal deixou de usa-la...
+
+idexaçao feita por 'robos' dos mecanismos de busca,no caso do google, google bot. ele pode ter dificuldades para enrar dentro do iframe E SE houverem conteudos sensiveis a indexaçao dentro deste iframe, pode prejudicar na avaliaçao do bot...
+
+nao use muitos iframes dentro dos sites.
+
+alguns problemas do iframe;
+
+*acessibilidade - os leitores de tela (muito usado por deficientes visuais) tambem tem esta dificuldade de entrar e entender os iframes.
+
+*usuabilidade - as vezes, o proprio navegador ou o usuario tem dificuldades de 'entender', por exemplo;
+    _vou voltar dentro do iframe ou dentro do site em que o iframe esta hospedado ????
+    _abrir com target='_blank', vou abrir dentro do iframe ou fora ????
+
+*responsividade...
+
+*problemas de segurança;
+    _iframes sao uma 'abertura de portas' entre sites, entao CUIDADO com para quem voce abre a porta.
+    _a abertura para 'pessoas' erradas eh responsabilidade unica e integral do(s) desenvolvedor(s).
+    _vulnerabilidade de ataques, por exemplo; cross-site && xss...
