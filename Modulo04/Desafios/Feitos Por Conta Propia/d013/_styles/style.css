@@ -2,42 +2,41 @@
 *{
     margin: 0;
     padding: 0;
-}
-:root{
-    --fonte_padrao: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background:#fff url('../_images/fundo-madeira.jpg') center center no-repeat fixed;
+    background:#000 url('../_images/fundo-madeira.jpg') center center no-repeat fixed;
     background-size: cover;
+}
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.container_celular{
-    background-image: url('../_images/frame-iphone.png');
-    background-repeat: no-repeat;
+#container_celular{
+    background: url('../_images/frame-iphone.png') no-repeat;
     background-size: 100% 100%;
     width: 470px;
     height: 99vh;
-    background-color: transparent;
     position: relative;
 }
-.quadro{
+#conteudo{
     position: absolute;
-    top: 51.4%;
-    left: 51%;
-    transform: translate(-51.2%,-51.5%);
-    width: 405px;
-    height: 745px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    height: 747px;
 }
-.conteudo{
-    background-image: url('../_images/tela-home.jpg');
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
+#erro{
+    color: red;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 50px 10px;
 }
-.botoes{
+#botoes{
     width: 80px;
     height: 600px;
     position: absolute;
@@ -45,14 +44,19 @@ body{
     right: 0;
     padding: 0 10px;
 }
-
-.botoes img{
+#botoes a{
+    margin: 30px 0;
+    display: block;
+}
+#botoes img{
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    margin: 16px 0;
-    box-shadow: 2px 2px 8px #000000af;
+    box-shadow: 2px 2px 8px #00000075;
 }
-.botoes img:hover{
-    transform: scale(1.1);
+#botoes img:hover{
+    transition: .4s;
+    box-shadow: 5px 5px 14px #000000b0;
+    border: 3px solid #b3b3b3;
+    transform: translate(-8px,-8px);
 }
