@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>meu primeiro formulario</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p><label for="inome">nome:</label><input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">sobrenome:</label><input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+        <!-- metodo POST nao eh seguro, ele eh apenas um outro METODO de enviar os dados, a sua vantagem eh nao deixar os dados na cara do usuario,mas se o usuario vasculhar bem,ele acha (da maneira que foi apresentada,acha bem facil por sinal...)... -->
+        <!-- dados nao sao sensiveis; nome,peso,idioma etc ... metodo GET -->
+        <!-- dados sensiveis; senhas,cartao de credito,cpf etc ... metodo POST -->
+        <!-- metodo GET tambem permite uma url compartilhavel -->
+        <!-- quando voce envia dados por metodo GET, voce soh pode enviar ate 3000 bytes, se ultrapassar este valor, o metodo GET nao eh para voce... 3000 bytes == 3000 letras (caracteres) -->
+        <!-- o guanabara me disse que eu preciso no futuro aprender mais sobre HTTPS para proteger dados -->
+        <!-- dados maiores que 3000 bytes podem serem enviados por metodo POST e arquivos como exemplo 'fotos' tambem devem ser enviados por ele -->
+        <!-- a velocidade entre os dois metodos nao eh mais um criterio, uma vez considerado que, os aparelhos e tecnologias atuais nao permitem uma diferença significativa de velocidade entre eles... (mas realmente,tecnicamente, existe uma diferença de velocidade entre os dois,porem nao eh perceptivel nos dias atuais)-->
+    </form>
+</body>
+</html>

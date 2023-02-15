@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>meu primeiro formulario</h1>
+    <form action="cadastro.php" autocomplete="off"><!-- action = para onde mandar os dados -->
+        <!-- dentro do 'for', sempre colocar id -->
+        <p><label for="inome">nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+        <!-- para onde isto vai? precisa de uma linguagem de programaçao como exemplos; asp,java (java servidor),php -->
+        <!-- name eh muito utilizado pelo html e php, id eh mais utilizado pelo javascript,apesar de ele tambem poder utilizar names, entao todo objeto de entrada precisa de um name (e id ?) -->
+        <!-- id e name podem ter o mesmo nome... -->
+        <!-- os dados sao enviados pela url (por padrao,neste exemplo acima) -->
+    </form>
+</body>
+</html>

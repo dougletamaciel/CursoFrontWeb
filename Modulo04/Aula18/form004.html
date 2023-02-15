@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario controles e funcionalidades</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- nao vamos aprender 100% dos controles e seus atributos e funcionalidades E nem todos sao tao utilizados ou compativeis, mas vamos aprender bastante coisa -->
+    <h1>meu primeiro formulario</h1>
+    <form action="cadastro.html" method="POST" autocomplete="off"><!-- era pra ser doc php,mas por algum motivo isso nao funcionou, entao usei html-->
+        <p><label for="inome">nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
