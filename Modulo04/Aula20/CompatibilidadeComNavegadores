@@ -1,0 +1,9 @@
+diferentes navegadores, diferentes comportamentos.
+
+me pareceu que o safari da apple eh o que mais vai dar trabalho (desktop), ao mesmo tempo, tenho ciencia da existencia de atributos especificos para edge (-ms-), firefox (-moz-) e tambem para o proprio safari (-webkit-).
+
+aparentemente o mais estavel eh o chrome e todos que sao baseados no chromium...
+
+possivel soluçao comentada no video; desenvolver o propio javascript,os proprios controles para nao depender do navegador (assim como talvez sera citado futuramente que eh possivel estilizar de outra maneira)...
+
+"nao eh porque esta funcionado na sua casa, que vai estar funcionado na casa das outras pessoas...", elas podem estar com os navegadores desatualizados (em diferentes versoes), maquinas muito antigas, tambem algo que nao funcionava antes pode estar funcionando no agora.. tudo isso e mais um pouco a se pensar...
