@@ -16,6 +16,7 @@
             <label for="ies">estado</label>
             <select name="est" id="iest">
                 <option value="" selected disabled>--- Escolha ---</option>
+                <!-- 'checked' deixa o elemento selecionado por padrao, usei 'disabled' para nao ser possivel seleciona-lo -->
                 <optgroup label="Regiao Sudeste">
                     <option value="MG">minas gerais</option>
                     <option value="RJ">rio de janeiro</option>
@@ -32,16 +33,22 @@
         <p>
             <label for="iprof">profissao</label>
             <input type="text" name="prof" id="iprof" list="lstprof">
-            <datalist id="lstprof">
-                <option value="ADM">administrador</option>
-                <option value="CONT">contabilista</option>
-                <option value="DEV">desenvolvedor</option>
-                <option value="PROF">professor</option>
+            <!-- atributo 'list' para relacionar com a lista (atravez de id) -->
+            <datalist id="lstprof"><!-- 'datalist' para ser possivel uma 'busca' dentro das opçoes, e neste caso, 'datalist' nao precisa de um name-->
+                <!-- removidos os values das 'options' para que eles nao apareçam para o usuario -->
+                <option>administrador</option> <!--value="ADM"-->
+                <option>contabilista</option> <!--value="CONT"-->
+                <option>desenvolvedor</option> <!--value="DEV"-->
+                <option>professor</option> <!--value="PROF"-->
             </datalist>
+            <!-- 'datalist' permite o envio de uma resposta alternativa que nao aparece na lista, esta resposta fica salva pelo navegador do cliente (soh ele ve) e eh adicionada as opçoes da lista. (no meu caso nao fica salvo por questoes de configuraçoes pessoais de navegadores) -->
         </p>
         <p>
             <label for="imsg">mensagem</label>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="escreva seu texto aqui..."></textarea>
+            <!-- 'textarea', assim como os outros elementos, pode ser estilizado por css, porem nesta caixa existem algumas configuraçoes de mecanismo de funcionamento... -->
+            <!-- quando utilizar o 'textarea', eh necessario usar o metodo POST, pois nao tem a limitaçao de 3000 bytes (caracteres), que com 'textarea' eh bem facil de ultrapassar-->
+            <!-- no momento da gravaçao da aula, o placeholder no textarea nao estava funcionando,atualmente ja eh possivel utiliza-lo -->
         </p>
         <p>
             <input type="submit" value="Enviar">

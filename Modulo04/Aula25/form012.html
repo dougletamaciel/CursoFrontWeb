@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="../Aula22/style.css">
+</head>
+<body>
+    
+    <h1>um pouco de javascript</h1>
+    <form action="../Aula18/cadastro.html" method="get" autocomplete="on">
+
+        <p>
+            <label for="inum">numero </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(num.value)">
+            <output id="ival">5</output>
+            <!-- quando for enviar, ele vai retornar o valor que esta dentro do input 'range', que neste caso eh o mesmo da saida (output), mas que fique claro que os outputs sao apenas uma saida visual... -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+</body>
+</html>
