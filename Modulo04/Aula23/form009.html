@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="../Aula22/style.css">
+</head>
+<body>
+    
+    <h1>exemplo de formulario</h1>
+    <form action="../Aula18/cadastro.html" method="get" autocomplete="on">
+
+        <p>
+            <label for="icor">cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+            <!-- 'value' para cor a ser mostrada por padrao -->
+            <!-- ele envia a cor em hexadecimal ("%23" eh a "#"... geralmente alguns simbolos sao representados desta maneira [exemplo, espaço, se nao me engano eh '%20']) -->
+            <!-- pode-se escolher 65 milhoes de cores -->
+        </p>
+        <p>
+            <label for="inivel">nivel de satisfaçao</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+        <!-- cuidado pois como sempre, esses inputs podem aparecer de maneira diferente e, inclusive, nao aparecer (caixas de texto no lugar, ou nem isso...) -->
+        <p>
+            <label for="ifoto">foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">
+            <!-- quando voce for usar esse tipo de mecanismo, eh necessario repassar por methodo 'POST',desta maneira ele ira enviar o arquivo como dados-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+    <!-- ultima aula sobre 'inputs' ??? -->
+
+</body>
+</html>

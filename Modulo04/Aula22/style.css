@@ -1,0 +1,53 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #808080;
+}
+h1{
+    position: absolute;
+    top: 5vh;
+    text-transform: capitalize;
+    color: white;
+    stroke: 0 0 8px #00000088;
+}
+form{
+    width: 60vw;
+    padding: 4%;
+    background-color: #d4d4d4;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #00000054;
+}
+form fieldset, form select{
+    padding: 10px;
+    margin: 1%;
+}
+form fieldset legend{
+    text-transform: capitalize;
+    color: #1f1f1f;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+form p{
+    margin: 5px;
+}
+form label, form select{
+    text-transform: capitalize;
+}
+form input, form select{
+    padding: 1%;
+    margin: 3px;
+}
+form textarea{
+    display: block;
+    max-width: 100%;
+    max-height: 50vh;
+}

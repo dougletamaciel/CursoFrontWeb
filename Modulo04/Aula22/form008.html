@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="../Aula22/style.css">
+</head>
+<body>
+    
+    <h1>exemplo de formulario</h1>
+    <form action="../Aula18/cadastro.html" method="get" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F" checked><label for="isxfem">feminino</label>
+            <!-- problema classico de input radio, para que eles estejam assimilados como uma mesma categoria eh necessario que eles tenham o mesmo nome (apenas o fieldset nao basta), desta forma nao sera permitido marcar mais de um input radio -->
+            <!-- ao tentar colocar 'checked' em todos inputs radio, apenas o ultimo ficara marcado -->
+            <!-- 'value' diz qual valor sera repassado para o php... -->
+        </fieldset>
+        <fieldset>
+            <legend>esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label> <br>
+            <!-- 'checked' ja deixa por padrao o input marcado/selecionado -->
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Nataçao</label> <br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tenis</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+
+</body>
+</html>
