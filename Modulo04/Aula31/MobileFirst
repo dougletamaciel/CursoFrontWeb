@@ -1,0 +1,15 @@
+mobile first eh uma coisa super importante que deve pelo menos ser considerado por nos (web-devs)
+
+uma abordagem que surgiu em 2009 por Luke Wroblewski,trabalhador do yahoo que hoje eh gerente de produtos do google.
+
+questionamento; porque ao invez de construir um site completo e depois ir retirando coisas dele para o uso em dispositivos moveis, nao fazer o contrario ? primeiro pensar/criar para plataforma movel e depois avançar reposicionando as coisas, sem remover muitas features...
+
+vantagens de montar usando esta visao; 
+
+    *facilidade na divulgaçao do site... o luke agora trabalha na google, e segundo ele, o proprio algoritimo do google (e ate de outros) valoriza a tecnica de 'mobile first';
+
+    *experiencia do usuario... existe a necessidade de trazer uma melhor otimizaçao para um carregamento mais leve, uma navegaçao mais clean, afinal de contas, existem as areas rurais e mais afastadas de grandes centros urbanos (interior por exemplo), onde a internet pode nao ser tao boa, ou a quantidade de aparelhos basicos no brasil que nao tem tanta capacidade de processamento... eh importante sempre tentar pensar em todas possibilidades;
+
+    *aumento de credibilidade... os usuarios em geral, avaliam de forma importante a cerca do comportamento de determinado site, consequentimente, a empresa por traz dele;
+
+    *performance... os sites moveis tem que ser mais leves,pois estao sujeitos a serem acessados por aparelhos que estao na rua com uma internet talvez nao muito boa;

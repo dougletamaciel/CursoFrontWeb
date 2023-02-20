@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* tambem pode ser feito por aqui... */
+
+/* declaraçoes gerais */
+
+@media all {
+    /* tambem poderia ser feito assim, apesar de nao ser necessario... */
+    /* ( jogar todas configuraçoes globais aqui... ) */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+h1{
+    color: white;
+    text-shadow: 2px 2px 0 #1526a7;
+    padding: 10px;
+}
+/* declaraçoes para retrato */
+@media screen and (orientation:portrait) {
+    body{
+        background-image: url('../../../Aula26/imagens/cev-portrait.jpg');
+        background-position: center bottom;
+    }
+}
+/* declaraçoes para paisagem */
+@media screen and (orientation:landscape) {
+    body{
+        background-image: url('../../../Aula26/imagens/cev-landscape.jpg');
+        background-position: left bottom;
+    }
+}
+
+
+/* o professor guanabara nao gosta muito deste metodo, acha que fica muito bagunçado mas ensina que pode ser feito dessa maneira e inclusive uma mistura dos dois metodos, que segundo ele ficaria mais bagunçado ainda kkkk */
+
+/* a primeira vez que usei este metodo (sem nem entender nada de media-querie) achei que estava ate que bem organizadinho, nao mudei esta opniao mas realmente o metodo da aula anterior eh muito mais bem organizado, clean... */
