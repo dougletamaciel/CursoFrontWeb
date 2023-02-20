@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries (Media Features)</title>
+    <link rel="stylesheet" href="estilos/style.css.css" media="all">
+    <!-- configuraçoes 'globais' (escopo global), estilo que sera aplicada para todos -->
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation:portrait)"><!-- para TELAS que estejam 'em peh', em modo RETRATO -->
+    <!--'and' significa adiçao de mais parametros && media features sao reconhecidas entre '()','media' aceita os dois tipos de mediaquerye (type & feature)-->
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation:landscape)"><!-- para TELAS que estejam 'deitadas', em modo PAISAGEM -->
+    <!-- tambem existe o mediatype="all", que nao foi citado na aula... obs; na verdade existem muitos outros... -->
+    <!-- mediaquery == mediatype + mediafeatures -->
+    <!-- media type == tipo de midia && media feature == caracteristica de midia -->
+    <!-- no exemplo anterior, entre os dois arquivos de estilos, nota-se uma repetiçao de configuraçoes, e para isso iremos utilizar o tipo 'all'... -->
+    <!-- altura > comprimento == portrait && comprimento > altura == landscape -->
+</head>
+<body>
+    <h1>mude a orientaçao do seu dispositivo</h1>
+</body>
+</html>

@@ -1,0 +1,8 @@
+@charset "UTF-8;";
+
+/* configuraçoes em modo retrato */
+
+body{
+    background-image: url('../../../Aula26/imagens/cev-landscape.jpg');
+    background-position: left bottom;
+}
