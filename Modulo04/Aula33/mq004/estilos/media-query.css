@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* todas as demais midias */
+
+/* Typical Device Breakpoints (medidas da w3c schools)
+
+    Pequenas Telas: ate 600px;
+    Celular: de 600px (601) ate 768px;
+    Tablet: 768px (769) ate 992px;
+    Desktop: 992px (993) ate 1200px;
+    TV: ate acima de 1200px;
+
+*/
+    /*    Tabela Retirada Da W3schools
+ 
+    _- Extra small devices (phones, 600px and down) -_
+    @media only screen and (max-width: 600px) {...}
+    
+    _- Small devices (portrait tablets and large phones, 600px and up) -_
+    @media only screen and (min-width: 600px) {...}
+    
+    _- Medium devices (landscape tablets, 768px and up) -_
+    @media only screen and (min-width: 768px) {...}
+    
+    _- Large devices (laptops/desktops, 992px and up) -_
+    @media only screen and (min-width: 992px) {...}
+    
+    _- Extra large devices (large laptops and desktops, 1200px and up) -_
+    @media only screen and (min-width: 1200px) {...}
+    */
+
+
+@media print {
+    /*body{
+        background-image: url('../../../Aula26/imagens/back-print.jpg');
+    } 
+    desnecessario pois nao imprime... */
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color: black
+    }
+    main::after{
+        content: 'essa impressao foi feita atravez do site www.cursoemvideo.com';
+        text-decoration: underline;
+        color: black;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    /* "no papel nao tem como imprimir um background" */
+}
+
+/* background nao imprime, mas imagem ja vi nas aulas anteriores que imprime, entao e se.... */
+@media print {
+    img#impressora{
+        display: block;
+    }
+}
+/* --------------------------------------------------------------------------------- */
+/* 
+@media screen and (max-width: 600px){
+    
+}
+@media screen and (min-width: 600px) and (max-width:768px){
+
+} 
+
+como os estilos principais ja foram feitos com base no 'mobile first', podemos ignorar estas duas media queries que fazem refenrencia aos mobiles...
+*/
+@media screen and (min-width: 768px) and (max-width: 992px) {   /* tablet */
+    body{
+        background-image: url('../../../Aula26/imagens/back-tablet.jpg');
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+@media screen and (min-width:992px) and (max-width: 1200px) {   /* desktop */
+    body{
+        background-image: url('../../../Aula26/imagens/back-pc.jpg');
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+@media screen and (min-width: 1200px) {   /* grandes telas */
+    body{
+        background-image: url('../../../Aula26/imagens/back-tv.jpg');
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+}

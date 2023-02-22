@@ -1,0 +1,10 @@
+typical device breakpoints  [pesquisar termo]...
+
+basicamente, quando criamos mediaqueries, temos que decidir; -qual eh o tamanho da tela de um celular? , -qual eh o tamanho da tela de um tablet? , -qual eh o tamanho da tela de uma televisao, -qual eh o limite da tela do monitor de um pc 'normal'?
+
+falar sobre breakpoints eh complicado, pois se eu escrevesse esses valores hoje neste documento de texto, provavelmente apos um tempo esses valores estariam ultrapassados, por que? 
+
+porque existem algumas tvs que sao gigantes (muitas polegadas de comprimento), mas que tem uma resoluçao relativamente baixa.. da mesma forma em que existem televisoes pequenas, com resoluçoes em 4k... 
+E o que a resoluçao tem a ver com tamanho de tela? OS PIXELS !
+
+imagine uma tv de 17" com 4000 pixels de largura devido a resoluçao, ou uma tv de 56" com 1200 pixels... levando em consideraçao as medidas de estilos css em 'px' eh possivel imaginar e ampliar o entendimento sobre essa relaçao entre conteudo e tela...
