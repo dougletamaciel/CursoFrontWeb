@@ -35,7 +35,6 @@ section#login{
     box-shadow: 0 0 10px #00000072;
     transition: width .3s , height .3s;
     transition-timing-function: ease;
-    /* 'ease' vai dar uma suaviada durante a animaçao,nao vai acelerar e desacelerar na mesma velocidade */
 }
 section#login > div#imagem{
     display: block;
